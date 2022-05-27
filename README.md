@@ -1,2 +1,2 @@
-# uxe-thc02-worldtraveler
+# WorldTraveler
 Built from scratch without any frameworks
