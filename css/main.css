@@ -72,17 +72,7 @@ h5 {
 	position: absolute;
 	display: inline-block;
 	padding: 4px 8px; 
-	z-index: 4;
-} 
-.image-wrapper .chip-blue {
-	background-color: #FFFFFF;
-	color: #333333;
-	font-weight: 600;
-	top: 20px;
-	left: -5px;
-	border-left: 10px #32C5FF solid;
-	font-size: 1.4rem;
-	text-transform: uppercase;
+	z-index: 2;
 }
 .image-wrapper .chip-yellow {
 	background-color: #FFFFFF;
@@ -94,10 +84,50 @@ h5 {
 	font-size: 1.4rem;
 	text-transform: uppercase;
 }
+.image-wrapper .chip-blue {
+	background-color: #FFFFFF;
+	color: #333333;
+	font-weight: 600;
+	top: 20px;
+	left: -5px;
+	border-left: 5px #32C5FF solid;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+.section {
+    background-color: #fff;
+}
+
+.content_area {
+    padding-left: 2.5rem;
+    padding-top: 1rem; 
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+		display: table; 
+}
+.container {
+	max-width: 1440px;
+	margin: 0 auto; 
+	
+} 
+.col-md-6 {
+	width: 49%;
+	flex: 0 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
 
 /* World Traveller Helpers */
 .wt-pl-3 {
-	padding-left:3rem; 
+	padding-left: 3rem; 
 }
 .wt-ml-3 {
 	margin-left:3rem; 
@@ -106,48 +136,34 @@ h5 {
 	margin-right: -3rem;
 	margin-left: 3rem;
 }
-
-@media only screen and (max-width: 1025px) {
-    .col-md-6{
-        width: 100% !important;
-				padding-bottom: 3rem;
-    }
-		.wt-mx-3 {
-			margin:0 
-		}
-		.wt-pl-3 {
-			padding-left:0rem; 
-		}
-		.image-wrapper .chip-yellow {
-			border-left: 10px #F7B500 solid; 
-		}
-  }
-
-.container{
-    max-width: 1440px;
-    margin: 0 auto;
-    overflow: hidden; 
-    
-}
-.col-md-6{
-    width: 49%;
-    flex: 0 0 auto;
-}
- 
-img{
-    width: 100%;
-}
-.section{
-    background-color: #fff;
-}
-.mt-6{
+.wt-mt-3{
     margin-top: 3rem;
 }
-.content_area{
-    padding-left: 2.5rem;
-    padding-top: 1rem; 
-}
-.row{
+
+
+
+@media only screen and (max-width: 1025px) {
+  .row{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+  }
+	.col-md-6{
+			width: 100% !important;
+			padding-bottom: 3rem;  
+	}
+	.wt-pl-3 {
+		padding-left: 3rem; 
+	}
+	.wt-ml-3 {
+		margin-left:3rem;  
+		margin: 0;
+	}
+	.wt-mx-3 { 
+		margin: 0;
+	}
+	.wt-mt-3{
+			margin-top: 3rem;
+	}
 }
+
+
